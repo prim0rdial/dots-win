@@ -1,0 +1,73 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+left",
+    "command": "cursorWordPartLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "cursorWordPartLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "cursorWordPartRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "cursorWordPartRightSelect",
+    "when": "textInputFocus"
+  },
+    {
+    "key": "alt+up",
+    "command": "cursorMove",
+    "args": {
+        "to": "up",
+        "by": "line",
+        "value": 3
+    },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+down",
+    "command": "cursorMove",
+    "args": {
+        "to": "down",
+        "by": "line",
+        "value": 3
+    },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "cursorMove",
+    "args": {
+        "to": "up",
+        "by": "line",
+        "value": 3,
+        "select": true
+    },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "cursorMove",
+    "args": {
+        "to": "down",
+        "by": "line",
+        "value": 3,
+        "select": true
+    },
+    "when": "editorTextFocus"
+  },
+  {
+    "key" :"alt+left",
+    "command" :"cursorHome"
+  },
+  {
+    "key" :"alt+right",
+    "command" :"cursorEnd"
+  }
+]
