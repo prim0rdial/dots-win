@@ -8,40 +8,25 @@
   "emmet.includeLanguages": {
     "javascript": "jsx"
   },
+  //
   "files.associations": {
     "*.js": "javascriptreact",
     ".database": "json",
-    "*.blade.php": "html",
-    "*.php": "php",
     "*.vue": "vue",
-    "*.php-cs": "php"
   },
   "javascript.validate.enable": false,
   "typescript.validate.enable": false,
   "search.useIgnoreFiles": false,
-  "prettier.disableLanguages": [
-    "yaml",
-    "yml",
-    "toml",
-    "md",
-    "php",
-    "blade"
-  ],
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   // Editing
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "MonoLisa",
   "editor.fontSize": 16,
   "editor.lineHeight": 25,
   "editor.fontWeight": "400",
-  "editor.letterSpacing": 0.0,
   "editor.fontLigatures": true,
   "editor.folding": false,
   "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
-  "workbench.editor.showIcons": false,
   "explorer.openEditors.visible": 0,
   "workbench.statusBar.feedback.visible": false,
   "workbench.activityBar.visible": false, // disable activitybar on left side
@@ -52,7 +37,6 @@
   "editor.rulers": [
     80,
     120,
-    121
   ],
   "html.format.wrapLineLength": 120,
   "editor.wordWrap": "wordWrapColumn",
@@ -68,6 +52,7 @@
   "editor.hideCursorInOverviewRuler": true,
   "editor.overviewRulerBorder": false,
   "editor.parameterHints.enabled": false,
+  // Scroll beyong last for better readability for last lines
   "editor.scrollBeyondLastLine": true,
   "editor.renderLineHighlight": "none",
   "editor.cursorBlinking": "phase",
@@ -76,13 +61,25 @@
   "editor.formatOnSave": true,
   "editor.formatOnPase": true,
   "editor.snippetSuggestions": "top",
+  "prettier.disableLanguages": [
+    "yaml",
+    "yml",
+    "toml",
+    "md",
+  ],
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
   // Terminal
-  "terminal.integrated.lineHeight": 1.6,
   "terminal.integrated.fontFamily": "MonoLisa",
-  "terminal.integrated.letterSpacing": 1,
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.lineHeight": 1.125,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.cursorStyle": "block",
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  // Use Pwsh 7
+  "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe",
   // Auto Save
   "git.enabled": true,
   "[svg]": {
@@ -104,147 +101,8 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "html.format.enable": false,
   "files.trimTrailingWhitespace": true,
-  "php.validate.executablePath": "C:/xampp/php/php.exe",
-  // Php config
-  "php.validate.enable": false,
-  "php.suggest.basic": false,
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
-  "workbench.colorTheme": "Bear Theme",
-  "colorize.languages": [
-    "json"
-  ],
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "expanded",
-      "extensionName": ".css",
-      "savePath": null
-    },
-    {
-      "format": "compressed",
-      "extensionName": ".min.css",
-      "savePath": "/dist/css"
-    },
-  ],
-  "auto-rename-tag.activationOnLanguage": [
-    "php",
-    "html",
-    "blade",
-    "jinja",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "plaintext",
-    "markdown",
-    "vue",
-    "liquid",
-  ],
-  // Intelephense config
-  "intelephense.stubs": [
-    "apache",
-    "redis",
-    "bcmath",
-    "bz2",
-    "calendar",
-    "com_dotnet",
-    "Core",
-    "ctype",
-    "curl",
-    "date",
-    "dba",
-    "dom",
-    "enchant",
-    "exif",
-    "fileinfo",
-    "filter",
-    "fpm",
-    "ftp",
-    "gd",
-    "hash",
-    "iconv",
-    "imap",
-    "interbase",
-    "intl",
-    "json",
-    "ldap",
-    "libxml",
-    "mbstring",
-    "mcrypt",
-    "meta",
-    "mssql",
-    "mysqli",
-    "oci8",
-    "odbc",
-    "openssl",
-    "pcntl",
-    "pcre",
-    "PDO",
-    "pdo_ibm",
-    "pdo_mysql",
-    "pdo_pgsql",
-    "pdo_sqlite",
-    "pgsql",
-    "Phar",
-    "posix",
-    "pspell",
-    "readline",
-    "recode",
-    "Reflection",
-    "regex",
-    "session",
-    "shmop",
-    "SimpleXML",
-    "snmp",
-    "soap",
-    "sockets",
-    "sodium",
-    "SPL",
-    "sqlite3",
-    "standard",
-    "superglobals",
-    "sybase",
-    "sysvmsg",
-    "sysvsem",
-    "sysvshm",
-    "tidy",
-    "tokenizer",
-    "wddx",
-    "xml",
-    "xmlreader",
-    "xmlrpc",
-    "xmlwriter",
-    "Zend OPcache",
-    "zip",
-    "zlib"
-  ],
-  "intelephense.telemetry.enabled": false,
-  "intelephense.format.enable": true,
-  "intelephense.completion.triggerParameterHints": true,
-  "intelephense.completion.insertUseDeclaration": true,
-  "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
-  "intelephense.trace.server": "messages",
-  "intelephense.files.exclude": [
-    "**/.git/**",
-    "**/.svn/**",
-    "**/.hg/**",
-    "**/CVS/**",
-    "**/.DS_Store/**",
-    "**/node_modules/**",
-    "**/bower_components/**",
-    "**/storage",
-    "**/storage/**",
-    "**/tests/**",
-    "**/resources/views/**",
-    "**/database/migrations/**",
-    "**/storage/framework/views/**",
-    "_ide_helper.php",
-    "_ide_helper_models"
-  ],
-  "todo-tree.tree.showScanModeButton": false,
-  "editor.parameterHints": false,
   "workbench.iconTheme": "vscode-great-icons",
+  // Exclude Files Type from fuzzy finder
   "search.exclude": {
     "**/.cache": true,
     "**/.git": true,
@@ -257,4 +115,12 @@
     "**/dist": true,
     "**/node_modules": true
   },
+  // Test Zone
+  // Controls if quick suggestions should show up while typing
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "workbench.colorTheme": "Night Owl",
 }

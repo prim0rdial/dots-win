@@ -69,5 +69,17 @@
   {
     "key" :"alt+right",
     "command" :"cursorEnd"
-  }
+  },
+  {
+    "key": "alt+n",
+    "command": "fileutils.newFile",
+    "category": "File Utils",
+    "title": "New"
+  },
+  {
+    "key": "alt+r",
+    "command": "fileutils.renameFile",
+    "category": "File Utils",
+    "title": "Rename"
+  },
 ]
